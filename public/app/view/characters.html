@@ -1,0 +1,22 @@
+<h5>Filtros</h5>
+
+<div id=filtro>
+	Nombre <input type="text" name="char_name" ng-model="filtro.char_name">
+	Temporada <input type="number" name="season" ng-model="filtro.season">
+	Capítulo <input type="number" name="episode" ng-model="filtro.episode">
+</div>
+<a href="#/addCharacter">Characters</a>
+<table>
+	<tr>
+   	<td>Nombre</td>
+   	<td>Temporada</td> 
+   	<td>Capítulo</td>
+   	<td></td>
+  </tr>
+  <tr ng-repeat="character in characters">
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><a href="">borrar</a><a href="#/detail">detalle</a></td>
+  </tr>	
+</table>
